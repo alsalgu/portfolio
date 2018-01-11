@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Alejandra Saldana</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
@@ -38,15 +39,41 @@
     <div class="content">
     </div>
   </div>
-  <div id="main" class="container">
-    <div class="about-box">
+  <div id="main" class="container-fluid">
+    <div class="about-box container-fluid bg-success">
+      <div class="row">
+        <div class="profile-img container col"><a>Hi</a></div>
+        <div class="contact-info container col"><a>Alejandra</a></div>
+      </div>
     </div>
-    <div class="projects-box">
-      <div class="project project1"></div>
-      <div class="project project2"></div>
+    <div class="projects-box container-fluid bg-secondary">
+      <div class="row justify-content-center">
+        <div class="col-sm-5">
+          <div class="card">
+            <img class="card-img-top" src="static/img/cardtop.png" alt="Lorum Ipsum Stuff">
+            <div class="card-body">
+              <h4 class="card-title">Project</h4>
+              <p class="card-text">This is my project.</p>
+              <a href="#" class="btn-sm btn-primary">Demo</a>
+              <a href="#" class="btn-sm btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="card">
+            <img class="card-img-top" src="static/img/cardtop.png" alt="Lorum Ipsum Stuff">
+            <div class="card-body">
+              <h4 class="card-title">Project</h4>
+              <p class="card-text">This is my project.</p>
+              <a href="#" class="btn-sm btn-primary">Demo</a>
+              <a href="#" class="btn-sm btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="resume-box">
-      <div class="pdf"></div>
+    <div class="resume-box container-fluid bg-info">
+      <div class="project pdf"></div>
     </div>
   </div>
   <!-- Script Libraries -->
