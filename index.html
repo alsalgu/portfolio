@@ -40,10 +40,14 @@
     <div class="container-fluid text-center">
       <div class="row justify-content-around align-items-center">
         <div class="d-flex flex-sm-column m-3">
-          <h1 class="display-2">Alejandra Saldana</h1>
-          <p class="lead">Web Developer</p>
-          <p>
-            <div class="btn-group justify-content-center" role="group">
+          <h1 class="display-2 d-none d-sm-block">Alejandra Saldana</h1>
+          <p class="lead d-none d-sm-block">Web Developer</p>
+          <div class="container d-block d-sm-none m-0 p-0">
+            <h1>Alejandra Saldana</h1>
+            <p>Web Developer</p>
+          </div>
+          <div class="d-flex flex-sm-column">
+            <div class="btn-group justify-content-center d-none d-sm-block" role="group">
               <button type="button" class="btn btn-outline-dark">
                 <img src="static/img/github.png"><span class="m-1">
                   alsalgu</span></button>
@@ -54,11 +58,28 @@
                 <img src="static/img/mail4.png"><span class="m-1">
                 ale.g.saldana@gmail.com</span></button>
             </div>
-          </p>
+          </div>
         </div>
         <!-- Profile Pic-->
-        <div class="d-flex flex-sm-column m-3">
+        <div class="d-flex flex-sm-column m-3 justify-content-center">
           <img src="static/img/me.png" class="rounded-circle">
+        </div>
+
+        <div class="d-flex flex-sm-column container d-block d-sm-none justify-content-center">
+          <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle m-3" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact
+      </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#!"><img src="static/img/github.png"><span class="m-1">
+                alsalgu</span></a>
+              <a class="dropdown-item" href="#!"><img src="static/img/linkedin.png"><span class="m-1">
+                alsalgu</span></a>
+              <a class="dropdown-item" href="#!"><img src="static/img/mail4.png"><span class="m-1">
+              ale.g.saldana@gmail.com</span></a>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -66,7 +87,6 @@
     <div class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
-          <h1 class="">Who's that Lady?</h1>
           <span class="rounded bg-secondary"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
         </div>
       </div>
@@ -80,7 +100,7 @@
       </div>
     </div>
     <!-- Projects Section -->
-    <div class="section containter h-50">
+    <div class="section h-50">
       <div class="row h-100 justify-content-around align-items-center">
         <!-- Project 1 -->
         <div class="m-2">
@@ -126,7 +146,6 @@
     <div class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
-          <h1>Resume</h1>
           <span class="rounded bg-secondary"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
         </div>
       </div>

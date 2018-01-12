@@ -51,21 +51,3 @@ body {
   stroke: currentColor;
   fill: currentColor;
 }
-
-/* //Media Queries for Device Size\\ */
-
-/*Desktop */
-
-@media screen and (min-width: 980px) {}
-
-/*Tablets*/
-
-@media screen and (min-width: 500px) and (max-width: 979px) {}
-
-/*Mobile*/
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 90%
-  }
-}
