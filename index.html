@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alejandra Saldana</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
@@ -35,14 +35,26 @@
     </div>
   </nav>
   <!-- Main Content -->
-  <div id="main" class="container-fluid">
+  <div id="main" class="container-fluid p-0">
     <!-- Profile -->
-    <div class="jumbotron jumbotron-fluid m-0">
-      <div class="row justify-content-around">
-        <div class="d-flex flex-sm-column m-3 text-center justify-content-center">
+    <div class="container-fluid text-center">
+      <div class="row justify-content-around align-items-center">
+        <div class="d-flex flex-sm-column m-3">
           <h1 class="display-2">Alejandra Saldana</h1>
           <p class="lead">Web Developer</p>
-          <p>GitHub LinkedIn Udacity</p>
+          <p>
+            <div class="btn-group justify-content-center" role="group">
+              <button type="button" class="btn btn-outline-dark">
+                <img src="static/img/github.png"><span class="m-1">
+                  alsalgu</span></button>
+              <button type="button" class="btn btn-outline-dark">
+                <img src="static/img/linkedin.png"><span class="m-1">
+                  alsalgu</span></button>
+              <button type="button" class="btn btn-outline-dark">
+                <img src="static/img/mail4.png"><span class="m-1">
+                ale.g.saldana@gmail.com</span></button>
+            </div>
+          </p>
         </div>
         <!-- Profile Pic-->
         <div class="d-flex flex-sm-column m-3">
@@ -51,19 +63,31 @@
       </div>
     </div>
     <!-- About Me -->
-    <div class="container-fluid bg-danger h-75">
+    <div class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
-          <span class="rounded bg-info"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
+          <h1 class="">Who's that Lady?</h1>
+          <span class="rounded bg-secondary"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
         </div>
       </div>
     </div>
+    <!-- Projects Title Div -->
+    <div class="bcg-parallax">
+      <div class="bcg"></div>
+      <div class="content-wrapper">
+        <h1 class="text-center">Projects</h1>
+        <p class="text-center"> Lorem Ipsum and Stuff </p>
+      </div>
+    </div>
     <!-- Projects Section -->
-    <div class="bg-secondary h-75">
+    <div class="section containter h-50">
       <div class="row h-100 justify-content-around align-items-center">
         <!-- Project 1 -->
         <div class="m-2">
-          <div class="card">
+          <div class="card ">
+            <div class="card-header">
+              JavaScript
+            </div>
             <img class="card-img-top" src="static/img/cardtop.png" alt="Lorum Ipsum Stuff">
             <div class="card-body">
               <h4 class="card-title">Project</h4>
@@ -76,6 +100,9 @@
         <!-- Project 2 -->
         <div class="m-2">
           <div class="card">
+            <div class="card-header">
+              JavaScript
+            </div>
             <img class="card-img-top" src="static/img/cardtop.png" alt="Lorum Ipsum Stuff">
             <div class="card-body">
               <h4 class="card-title">Project</h4>
@@ -87,11 +114,20 @@
         </div>
       </div>
     </div>
+    <!-- Projects Title Div -->
+    <div class="bcg-parallax">
+      <div class="bcg"></div>
+      <div class="content-wrapper">
+        <h1 class="text-center">What's in Store?</h1>
+        <p class="text-center"> Lorem Ipsum and Stuff </p>
+      </div>
+    </div>
     <!-- Resume Section -->
-    <div class="container-fluid bg-danger h-75">
+    <div class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
-          <span class="rounded bg-info"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
+          <h1>Resume</h1>
+          <span class="rounded bg-secondary"><p class="m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis accumsan urna, nec faucibus massa mollis ac. Vestibulum in laoreet quam, non cursus neque. Curabitur faucibus, sapien vitae pellentesque accumsan, diam nulla lacinia dui, ut pretium erat tellus in quam. Nunc molestie metus urna, a luctus metus venenatis vel. Sed venenatis molestie enim non mattis. Fusce ut velit orci. Vestibulum non lectus sed sem blandit mollis sollicitudin eu magna. Nunc turpis magna, euismod nec enim in, commodo venenatis lorem.</p></span>
         </div>
       </div>
     </div>
