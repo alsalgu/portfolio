@@ -20,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#main" id="link1">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about" id="link2">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects" id="link3">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Resume</a>
+          <a href="#resume" class="nav-link" id="link4">Resume</a>
         </li>
       </ul>
     </div>
@@ -84,7 +84,7 @@
       </div>
     </div>
     <!-- About Me -->
-    <div class="section container-fluid h-50">
+    <div id="about" class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
           <span class="shadow textblock rounded text-light bg-dark p-2"><p class="m-2">I always dabbled in web design as a tyke. I can still remember my geocities page and all the atrocities the late 90s allowed you to commit. I remember how many times I broke the family computer by messing around networking settings a 9 year old probably had no business getting into. I couldn't help myself. My mom had bought a huge 'Teach Yourself Windows 95' book and I had taken to that as my gospel. I read it cover to cover and boy, did I act on it.</p>
@@ -105,7 +105,7 @@
       </div>
     </div>
     <!-- Projects Section -->
-    <div class="section h-50">
+    <div id="projects" class="section h-50">
       <div class="row h-100 justify-content-around align-items-center">
         <!-- Project 1 -->
         <div class="m-2">
@@ -148,7 +148,7 @@
       </div>
     </div>
     <!-- Resume Section -->
-    <div class="section container-fluid h-50">
+    <div id="resume" class="section container-fluid h-50">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
           <span class="textblock shadow bg-dark rounded text-light p-2">Sup</span>
@@ -161,9 +161,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
