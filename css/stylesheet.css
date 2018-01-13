@@ -68,3 +68,18 @@ p {
     transform: translateY(0);
 
 }
+
+.footer {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-size{
+  width: 400px;
+  height: 450px;
+}
+
+.card-text-size{
+  height: 500px;
+}
