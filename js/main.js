@@ -24,7 +24,7 @@ $(document).ready(function () {
             } else {
               $target.attr('tabindex', '-1');
               $target.focus();
-            };
+            }
           });
         }
       }
@@ -57,7 +57,7 @@ $(document).ready(function () {
         ease: Power0.easeNone,
       }, 0.4)
       .from(bg, 2, {
-        y: '-30%',
+        y: '-40%',
         ease: Power0.easeNone,
       }, 0);
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
         triggerElement: this.children[0],
         triggerHook: 0.9,
       })
-      .setClassToggle(this, 'fade-in') // add class to project 01
+      .setClassToggle(this, 'fade-in')
       .addTo(controller);
   });
 });

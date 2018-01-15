@@ -4,15 +4,12 @@ html {
 }
 
 body {
-  background-color: #000000;
   display: flex;
   margin: 0;
   padding-top: 50px;
 }
 
 .section {
-  background-color: #181818;
-background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%23404040' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
   overflow: hidden;
   position: relative;
 }
@@ -27,9 +24,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox=
 }
 
 .bcg {
-  background: url('../static/img/p1.jpeg') no-repeat;
-  background-size: cover;
-  height: 130%;
+  background: url('../static/img/b1.jpeg') no-repeat;
+  height: 500%;
   opacity: 0.7;
   position: absolute;
   top: 0;
@@ -58,15 +54,14 @@ p {
 }
 
 .project {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
 }
 
 .project.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .footer {
@@ -75,11 +70,11 @@ p {
   position: relative;
 }
 
-.card-size{
+.card-size {
   width: 400px;
   height: 450px;
 }
 
-.card-text-size{
+.card-text-size {
   height: 500px;
 }
