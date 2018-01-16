@@ -38,7 +38,7 @@ body {
 
 .bcg {
   background: url('../static/img/b1.jpeg') no-repeat;
-  background-size: 100%;
+  background-size: 300%;
   height: 500%;
   opacity: 0.7;
   position: absolute;

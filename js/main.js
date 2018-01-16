@@ -60,14 +60,14 @@ $(document).ready(function() {
     var parallaxTL = new TimelineMax();
     parallaxTL
       .from(bg, 2, {
-        y: '-60%',
+        y: '-40%',
         ease: Power0.easeNone,
       }, 0);
 
     var slideParallaxScene = new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: 1,
-        duration: '100%',
+        duration: '200%',
       })
       .setTween(parallaxTL)
       .addTo(controller);
