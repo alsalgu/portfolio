@@ -1,9 +1,9 @@
-$(window).on('load', function() {
+$(window).on('load', function () {
   // Show Loader as window loads.
   $('.loader').fadeOut('loader');;
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Smooth Scrolling //
   $('a[href*="#"]')
     .not('[href="#"]')
@@ -12,7 +12,7 @@ $(document).ready(function() {
     .not('[href="#summary"]')
     .not('[href="#art"]')
     .not('[href^="#collapse"]')
-    .click(function(event) {
+    .click(function (event) {
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
         location.hostname == this.hostname
@@ -24,7 +24,7 @@ $(document).ready(function() {
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top,
-          }, 1000, function() {
+          }, 1000, function () {
             var $target = $(target);
             $target.focus();
             if ($target.is(':focus')) {
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
   // Loop through each Title Card
 
-  $('.bcg-parallax').each(function() {
+  $('.bcg-parallax').each(function () {
     var bg = $(this).find('.bcg');
     var parallaxTL = new TimelineMax();
     parallaxTL
@@ -73,14 +73,14 @@ $(document).ready(function() {
       .addTo(controller);
   });
 
-  $('.bcg-parallax').each(function() {
+  $('.bcg-parallax').each(function () {
     var cont = $(this).find('.content-wrapper');
     var parallaxTL2 = new TimelineMax();
     parallaxTL2
       .from(cont, 2, {
         ease: Bounce.easeOut,
         y: '-300%',
-      })
+      });
 
     var slideParallaxScene2 = new ScrollMagic.Scene({
         triggerElement: this,
@@ -92,7 +92,7 @@ $(document).ready(function() {
   });
 
   //loop through each project element
-  $('.project').each(function() {
+  $('.project').each(function () {
     // build a scene
     var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
