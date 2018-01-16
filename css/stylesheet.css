@@ -93,3 +93,8 @@ p {
   z-index: 9999;
   background: url(../static/img/Preloader_4.gif) center no-repeat #fff;
 }
+
+.title {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 4em;
+}

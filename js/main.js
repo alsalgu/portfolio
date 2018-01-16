@@ -69,6 +69,7 @@ $(document).ready(function () {
         triggerElement: this,
         triggerHook: 1,
         duration: '200%',
+        reverse: false,
       })
       .setTween(parallaxTL)
       .addTo(controller);
