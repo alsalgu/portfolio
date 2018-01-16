@@ -8,6 +8,9 @@ $(document).ready(function () {
   $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('[href="#skills"]')
+    .not('[href="#summary"]')
+    .not('[href="#art"]')
     .click(function (event) {
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
