@@ -19,7 +19,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#main" id="link1">Home<span class="sr-only">(current)</span></a>
@@ -90,18 +90,18 @@
       </div>
     </div>
     <!-- About Me -->
-    <div id="about" class="section container-fluid bg-white border border-primary border-left-0 border-right-0">
+    <div id="about" class="section bg-white border border-primary border-left-0 border-right-0">
       <div class="row m-5">
-        <div class="d-flex flex-sm-column m-3 container-fluid">
+        <div class="col-xs-6 container-fluid nav-justified">
           <!-- Nav tabs -->
           <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
-            <li class="nav-item">
+            <li role="presentation" class="nav-item">
               <a class="nav-link active" id="summary-tab" data-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="true">About Me</a>
             </li>
-            <li class="nav-item">
+            <li role="presentation" class="nav-item">
               <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Developer Skills</a>
             </li>
-            <li class="nav-item">
+            <li role="presentation" class="nav-item">
               <a class="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">Design Skills</a>
             </li>
           </ul>
@@ -118,34 +118,48 @@
                 sem arcu, sit amet vestibulum neque sagittis ut. Sed vitae lobortis nibh. Vivamus felis arcu, varius sed ultrices non, dignissim laoreet nibh. Vestibulum non erat vitae ex rhoncus vestibulum sit amet ut elit.</p>
               <!-- Summary End-->
             </div>
-            <div class="textbox tab-pane bg-white border border-primary rounded" style="font-size: 6em" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-              <!-- Dev Skills --><row>
-              <div class="col bg-primary">
-                <div class="collapse" id="collapseHTML">Henlo</div>
+            <div class="textbox tab-pane fade bg-white border border-primary rounded" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+              <!-- Dev Skills 1-->
+              <div class="bg-primary">
+                <div class="collapse" id="collapseHTML">
+                  <div class="p-2">
+                    <h4 class="text-light">Fluency:</h4>
+                    <img src="static/img/star-full.png">
+                    <img src="static/img/star-full.png">
+                    <img src="static/img/star-full.png">
+                    <img src="static/img/star-full.png">
+                    <img src="static/img/star-full.png">
+                  </div>
+                </div>
               </div>
-              <div class="col p-3"><h4>Front-End</h4>
-              <a id="html-icon" aria-controls="collapseHTML" data-toggle="collapse" href="#collapseHTML"><i class="devicon-html5-plain-wordmark"></i></a>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-jquery-plain-wordmark"></i>
-              <i class="devicon-bootstrap-plain-wordmark"></i>
-              <i class="devicon-apache-line-wordmark"></i><br>
-              <h3>Back-End</h3>
-              <i class="devicon-python-plain-wordmark"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-              <i class="devicon-ubuntu-plain-wordmark"></i>
-              <br>
-              <h3>Tools</h3>
-            <i class="devicon-git-plain-wordmark"></i>
-            <i class="devicon-amazonwebservices-plain-wordmark"></i>
-            <i class="devicon-github-plain-wordmark"></i></div>
-            <!--Dev Deets-->
-
-          </row>
-
+              <div class="p-3" style="font-size: 5em">
+                <h4>Front-End</h4>
+                <a id="html-icon" aria-controls="collapseHTML" data-toggle="collapse" href="#collapseHTML"><i class="devicon-html5-plain-wordmark"></i></a>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+                <i class="devicon-bootstrap-plain-wordmark"></i>
+                <i class="devicon-apache-line-wordmark"></i><br>
+                <h3>Back-End</h3>
+                <i class="devicon-python-plain-wordmark"></i>
+                <i class="devicon-postgresql-plain-wordmark"></i>
+                <i class="devicon-ubuntu-plain-wordmark"></i>
+                <br>
+                <h3>Tools</h3>
+                <i class="devicon-git-plain-wordmark"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon-github-plain-wordmark"></i></div>
+              <!--Dev Deets-->
               <!-- Dev Skills End -->
+              <div class="alert alert-info m-2">
+                1<img src="static/img/star-full.png">
+                2<img src="static/img/star-full.png">
+                3<img src="static/img/star-full.png">
+                4<img src="static/img/star-full.png">
+                5<img src="static/img/star-full.png">
+              </div>
             </div>
-            <div class="textbox tab-pane bg-white border border-primary rounded" id="art" role="tabpanel" aria-labelledby="art-tab">
+            <div class="textbox tab-pane fade bg-white border border-primary rounded" id="art" role="tabpanel" aria-labelledby="art-tab">
               <!-- Art -->
               <!-- Art End -->
             </div>
@@ -275,7 +289,7 @@
       </div>
     </div>
     <!-- Resume Section -->
-    <div id="resume" class="section container-fluid h-25 bg-white">
+    <div id="resume" class="section h-25 bg-white">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="d-flex flex-sm-column m-3 container-fluid">
           <span class="rounded border border-primary p-3 bg-white"><p class="m-1">
@@ -302,7 +316,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <div id="footer" class="footer container-fluid text-primary p-3 border border-primary border-left-0 border-right-0 border-bottom-0">
+    <div id="footer" class="footer text-primary p-3 border border-primary border-left-0 border-right-0 border-bottom-0">
       <p class="m-0 text-center"> Page Designed and Coded by Me! </p>
     </div>
   </div>
