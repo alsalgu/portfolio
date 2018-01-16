@@ -56,26 +56,38 @@ $(document).ready(function() {
   // Loop through each Title Card
 
   $('.bcg-parallax').each(function() {
-    var cont = $(this).find('.content-wrapper');
     var bg = $(this).find('.bcg');
     var parallaxTL = new TimelineMax();
     parallaxTL
-      .staggerFrom(cont, 0.4, {
-        rotation: 360,
-        y: 100,
-        ease: Power0.easeNone,
-      }, 0.4)
       .from(bg, 2, {
-        y: '-40%',
+        y: '-60%',
         ease: Power0.easeNone,
       }, 0);
 
     var slideParallaxScene = new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: 1,
-        duration: '200%',
+        duration: '100%',
       })
       .setTween(parallaxTL)
+      .addTo(controller);
+  });
+
+  $('.bcg-parallax').each(function() {
+    var cont = $(this).find('.content-wrapper');
+    var parallaxTL2 = new TimelineMax();
+    parallaxTL2
+      .from(cont, 2, {
+        ease: Bounce.easeOut,
+        y: '-300%',
+      })
+
+    var slideParallaxScene2 = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.9,
+        reverse: false,
+      })
+      .setTween(parallaxTL2)
       .addTo(controller);
   });
 
