@@ -1,6 +1,10 @@
+$(window).on('load', function () {
+  // Show Loader as window loads.
+  $('.loader').fadeOut('loader');;
+});
+
 $(document).ready(function () {
   // Smooth Scrolling //
-
   $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
