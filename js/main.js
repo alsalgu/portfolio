@@ -11,6 +11,7 @@ $(document).ready(function () {
     .not('[href="#skills"]')
     .not('[href="#summary"]')
     .not('[href="#art"]')
+    .not('[href^="#collapse"]')
     .click(function (event) {
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
