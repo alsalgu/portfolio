@@ -1,9 +1,9 @@
-$(window).on('load', function () {
+$(window).on('load', function() {
   // Show Loader as window loads.
   $('.loader').fadeOut('loader');;
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   // Smooth Scrolling //
   $('a[href*="#"]')
     .not('[href="#"]')
@@ -12,7 +12,7 @@ $(document).ready(function () {
     .not('[href="#summary"]')
     .not('[href="#art"]')
     .not('[href^="#collapse"]')
-    .click(function (event) {
+    .click(function(event) {
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
         location.hostname == this.hostname
@@ -24,7 +24,7 @@ $(document).ready(function () {
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top,
-          }, 1000, function () {
+          }, 1000, function() {
             var $target = $(target);
             $target.focus();
             if ($target.is(':focus')) {
@@ -55,13 +55,14 @@ $(document).ready(function () {
 
   // Loop through each Title Card
 
-  $('.bcg-parallax').each(function () {
+  $('.bcg-parallax').each(function() {
     var cont = $(this).find('.content-wrapper');
     var bg = $(this).find('.bcg');
     var parallaxTL = new TimelineMax();
     parallaxTL
-      .from(cont, 0.4, {
-        autoAlpha: 0,
+      .staggerFrom(cont, 0.4, {
+        rotation: 360,
+        y: 100,
         ease: Power0.easeNone,
       }, 0.4)
       .from(bg, 2, {
@@ -73,14 +74,13 @@ $(document).ready(function () {
         triggerElement: this,
         triggerHook: 1,
         duration: '200%',
-        reverse: false,
       })
       .setTween(parallaxTL)
       .addTo(controller);
   });
 
   //loop through each project element
-  $('.project').each(function () {
+  $('.project').each(function() {
     // build a scene
     var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
