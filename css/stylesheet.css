@@ -121,3 +121,41 @@ body {
 .collapsed {
   color: gray;
 }
+
+/* Media Queries*/
+
+/* XS to SM size */
+
+@media (min-width: 0px) and (max-width: 576px) {
+  .title {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 2em;
+  }
+
+  .title2 {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 1.2em;
+  }
+
+  .title3 {
+    font-size: 1em;
+  }
+}
+
+/* SM to LG */
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .title {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 3em;
+  }
+
+  .title2 {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 1.5em;
+  }
+
+  .title3 {
+    font-size: 1.2em;
+  }
+}
