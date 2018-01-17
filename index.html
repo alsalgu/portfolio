@@ -71,15 +71,15 @@
     <section id="about" class="row main container-fluid border border-top-1 border-left-0 border-right-0 border-primary">
       <!-- About Tab Navigation -->
       <div class="row w-100">
-        <ul class="nav nav-pills nav-justified w-100">
-          <li class="nav-item">
-            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#collapsetab1" role="tab" aria-controls="tab1" aria-selected="true">Active</a>
+        <ul class="nav nav-pills nav-justified w-100 title2">
+          <li class="nav-item border border-primary rounded p-2 m-2">
+            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#collapsetab1" role="tab" aria-controls="tab1" aria-selected="true">About Me</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="second-tab" data-toggle="tab" href="#collapsetab2" role="tab" aria-controls="tab2">Active</a>
+          <li class="nav-item border border-primary rounded p-2 m-2">
+            <a class="nav-link" id="second-tab" data-toggle="tab" href="#collapsetab2" role="tab" aria-controls="tab2">Developer Skills</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="third-tab" data-toggle="tab" href="#collapsetab3" role="tab" aria-controls="tab3">Active</a>
+          <li class="nav-item border border-primary rounded p-2 m-2">
+            <a class="nav-link" id="third-tab" data-toggle="tab" href="#collapsetab3" role="tab" aria-controls="tab3">Artist Skills</a>
           </li>
         </ul>
       </div>
@@ -109,7 +109,21 @@
           </div>
           <!-- Tab Two-->
           <div class="tab-pane border border-primary rounded about-info" id="collapsetab2" role="tabpanel" aria-labelledby="second-tab">
-            <div class="collapse bg-primary text-light" id="collapseHTML">&&&&</div>
+            <div class="collapse bg-primary text-light" id="collapseHTML">
+              <div class="row">
+                <div class="col m-2">
+                  <h4 class="text-light">Fluency:</h4>
+                  <img src="static/img/star-full.png">
+                  <img src="static/img/star-full.png">
+                  <img src="static/img/star-full.png">
+                  <img src="static/img/star-full.png">
+                  <img src="static/img/star-full.png">
+                </div>
+                <div class="col m-2 d-flex justify-content-end align-items-center">
+                  <h4 class="text-light">I understand syntax without needing documentation</h4>
+                </div>
+              </div>
+            </div>
             <div class="about-text-info" style="font-size: 5em">
               <h4>Front-End</h4>
               <a id="html-icon" aria-controls="collapseHTML" data-toggle="collapse" href="#collapseHTML"><i class="devicon-html5-plain-wordmark"></i></a>
