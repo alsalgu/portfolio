@@ -136,6 +136,14 @@ body {
   #socialLarge {
     display: none;
   }
+
+  .big-img{
+    display: none;
+  }
+
+  .bcg {
+    height: 330%;
+  }
 }
 
 /* SM to LG */
