@@ -72,11 +72,9 @@ body {
 }
 
 .card-size {
-  font-size: 1em;
   height: 450px;
   margin: 1vh;
   max-width: 400px;
-  min-width: 400px;
 }
 
 .text-area {
@@ -127,22 +125,21 @@ body {
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 2em;
   }
-
   .title2 {
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 1.2em;
   }
-
   #socialLarge {
     display: none;
   }
-
-  .big-img{
+  .big-img {
     display: none;
   }
-
   .bcg {
     height: 330%;
+  }
+  .card-body {
+    overflow-y: scroll
   }
 }
 
@@ -153,10 +150,8 @@ body {
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 3em;
   }
-
   .title2 {
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 1.5em;
   }
-
 }
