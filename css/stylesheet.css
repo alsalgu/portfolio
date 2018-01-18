@@ -141,6 +141,10 @@ body {
   .card-body {
     overflow-y: scroll
   }
+
+  h5 {
+    font-size: 1.1em;
+  }
 }
 
 /* SM to LG */
