@@ -12,6 +12,7 @@ $(document).ready(function () {
     .not('[href="#summary"]')
     .not('[href="#art"]')
     .not('[href^="#collapse"]')
+    .not('[href^="#carousel"]')
     .click(function (event) {
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
