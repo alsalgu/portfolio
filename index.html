@@ -264,7 +264,7 @@
                       <img src="static/img/star-empty.png">
                     </div>
                     <div class="col m-2 d-flex justify-content-end align-items-center">
-                      <h4 class="text-light">I can use Ubuntu enough to set up a server.</h4>
+                      <h4 class="text-light">It's my personal OS of choice. :)</h4>
                     </div>
                   </div>
                 </div>
@@ -461,6 +461,62 @@
         </div>
       </div>
     </div>
+      <!-- Project Three Modal -->
+    <div class="modal" id="projectModal03" tabindex="-1" role="dialog" aria-labelledby="projectModal03-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-light" id="projectModal03-label">Find a Noodle!</h5>
+
+          </div>
+          <div class="modal-body pb-0">
+            <div id="carousel03-indicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="static/img/previews/aws1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="static/img/previews/aws2.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="static/img/previews/aws3.png" alt="Second slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel03-indicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+              <a class="carousel-control-next" href="#carousel03-indicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+            </div>
+            <div class="pt-2">
+              <span class="badge badge-pill badge-primary">SQL</span>
+              <span class="badge badge-pill badge-secondary">Python</span>
+              <span class="badge badge-pill badge-dark">Bootstrap</span>
+              <span class="badge badge-pill badge-success">Apache2</span>
+              <p class="pt-2">
+                Like I've said before, I live for SQL databases so I started this small blogsite to keep track of
+                characters and diary entries in a DnD campaign I'm part of. I wrote it in Python Flask with password hashing
+                provided by passlib and itsdangerous. There's also basic authentication provided by Flask HTTP-AUTH. A DJango
+                module handles file uploads and restricts them based on size/file-extension. I make use of cookies and keys as well.
+                Then I threw it all up on an Ubuntu instance using Apache 2 via Amazon Web Services.
+              </p>
+              <p>
+                I did this in a few days off and on so there's a long TO-DO list to really polish it.
+                It's a good learning experience for me!
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer pt-0">
+            <a class="btn btn-primary" href="http://ec2-54-245-161-182.us-west-2.compute.amazonaws.com" target="_blank">Demo</a>
+            <a class="btn btn-info" href="https://github.com/alsalgu/starfinderblog" target="_blank">Source Code</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Projects -->
     <section id="projects" class="row main justify-content-around">
       <!-- Project One -->
@@ -517,18 +573,29 @@
       <!-- Project Three -->
       <div id="project03" class="project card card-size border-primary">
         <div class="card-header">
-          <span class="badge badge-pill badge-primary">JavaScript</span>
+          <span class="badge badge-pill badge-primary">SQL</span>
+          <span class="badge badge-pill badge-secondary">Python</span>
+          <span class="badge badge-pill badge-dark">Bootstrap</span>
+          <span class="badge badge-pill badge-success">Apache2</span>
         </div>
-        <img src="static/img/previews/p2.png" alt="Lorum Ipsum Stuff">
+        <!-- Preview Image -->
+        <div class="preview container-fluid w-100 m-0 p-0">
+          <img src="static/img/previews/aws3.png" class="image" alt="Lorum Ipsum Stuff" style="height: 200px">
+          <div class="overlay" data-toggle="modal" data-target="#projectModal03">
+            <span class="text title2 text-light bg-primary pl-2 pr-2 rounded">Full View</span>
+          </div>
+        </div>
+        <!-- Rest of the Card -->
         <div class="card-body text-area">
-          <h4 class="card-title">Al's Movie Picks</h4>
+          <h4 class="card-title">Blog Site on Apache Server</h4>
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius turpis in quam vestibulum sodales.
+            The beginnings of a pet project -  a fictional newspaper for a DnD Campaign
+            with user-registration, character creation, picture uploads and blog posts.
           </p>
         </div>
         <div class="card-footer">
-          <button type="button" class="btn btn-primary btn-sm m-1">Demo</button>
-          <button type="button" class="btn btn-primary btn-sm m-1">Source Code</button>
+          <a class="btn btn-primary" href="http://ec2-54-245-161-182.us-west-2.compute.amazonaws.com" target="_blank">Demo</a>
+          <a class="btn btn-primary" href="https://github.com/alsalgu/starfinderblog" target="_blank">Source Code</a>
         </div>
       </div>
       <!-- End Projects -->
@@ -537,7 +604,7 @@
     <section id="bcg-parallax02" class="bcg-parallax">
       <div id="bcg1" class="bcg"></div>
       <div id="content-wrapper2" class="content-wrapper">
-        <span class="title text-center text-light">Projects</span>
+        <span class="title text-center text-light">Resume</span>
       </div>
     </section>
     <!-- Resume -->
@@ -562,8 +629,8 @@
           <p class="m-1 pb-1">Full Stack Web Development Nanodegree – Jan 2018</p>
           <h4 class="rounded p-1 bg-primary text-light">Technical Skills</h4>
           <ul class="m-0">
-            <li> Front End Skills: HTML, JavaScript, CSS, jQuery, Bootstrap, AJAX, Knockout JS, Python</li>
-            <li>Back End Skills: API Design, CRUD, RESTful Services, PostgreSQL, MySQL, Apache</li>
+            <li> Front End Skills: HTML, CSS, JavaScript, jQuery, Bootstrap, Python</li>
+            <li>Back End Skills: Apache2, PostgreSQL</li>
             <li>Linux Distributions: Ubuntu</li>
             <li>Adobe Creative Cloud: Photoshop, Illustrator</li>
           </ul></p>
